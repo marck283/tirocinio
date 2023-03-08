@@ -29,8 +29,10 @@ router.post("", async (req, res) => {
             });
             if(response.status == 200) {
                 res.status(200).json({ image: response.data.url }).send();
-                return;
+            } else {
+                res.status(403).json({ error: "Errore durante la creazione dell'immagine da parte di OpenAI." }).send();
             }
+            return;
         } catch(err) {
             console.log(err);
             res.status(500).json({ error: "Errore durante la creazione dell'immagine." }).send();
