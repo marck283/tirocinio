@@ -1,0 +1,19 @@
+{
+  "name": "tirocinio",
+  "version": "1.0.0",
+  "description": "Server progetto tirocinio triennale Lasagna",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://https://github.com/marck283/tirocinio"
+  },
+  "author": "Marco Lasagna",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.17.2",
+    "firebase-tools": "^11.24.1"
+  }
+}
