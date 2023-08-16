@@ -12,12 +12,16 @@ jobs:
         uses: actions/setup-node@v3.8.0
         with:
           # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
-          node-version: >=20.4.0
+          node-version: 20.4.0
+
+      - name: Build project
+        run: npm ci && npm run build
           
+      - name: Setup Action
+        uses: actions/checkout@v2
+
       - name: Deploy to Firebase
-      - uses: actions/checkout@v2
-      - run: npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TIROCINIO_5A106 }}'
