@@ -1,5 +1,6 @@
 import express, { json, urlencoded } from 'express';
 import imageCreationCall from './imageCreationCall.mjs';
+import voiceRSSCall from './voiceRSSCall.mjs';
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -39,6 +40,7 @@ app.disable('x-powered-by'); //Disabling x-powered-by for security reasons
 app.use('/', express.static('public'));
 
 app.use("/ImageCreation", imageCreationCall);
+app.use("/VoiceCall", voiceRSSCall);
 
 /* Default 404 handler */
 app.use((req, res) => {
