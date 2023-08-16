@@ -15,3 +15,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TIROCINIO_5A106 }}'
           projectId: tirocinio-5a106
+          node-version: 20.4.0
