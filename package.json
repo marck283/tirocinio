@@ -17,7 +17,7 @@
     "firebase-tools": "^12.4.8",
     "node-input-validator": "^4.5.1",
     "openai": "^3.2.1",
-    "protobufjs": "^7.2.4",
+    "protobufjs": "^7.2.5",
     "voice-rss": "^3.0.0"
   }
 }
