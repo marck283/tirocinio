@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "firebase": "^10.1.0",
-    "firebase-tools": "^12.4.8",
+    "firebase-tools": "^12.5.4",
     "node-input-validator": "^4.5.1",
     "openai": "^3.2.1",
     "protobufjs": "^7.2.4",
